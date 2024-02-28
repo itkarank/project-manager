@@ -57,8 +57,4 @@ variable "allowed_ip" {
   default     = "0.0.0.0/0"
 }
 
-variable "key_name" {
-  description = "s3 bucket key"
-  default     = "terraform/state.tfstate"
-}
 
