@@ -48,14 +48,14 @@ route {
 
 # Route Table Association for  Subnet
 
-resource "aws_route_table_association" "rta" {
+resource "aws_route_table_association" "rta1" {
   subnet_id      = aws_subnet.public_subnet.id
   route_table_id = aws_route_table.route_table.id
 }
 
 # Route Table Association for  Subnet
 
-resource "aws_route_table_association" "rta" {
+resource "aws_route_table_association" "rta2" {
   subnet_id      = aws_subnet.public_subnet2.id
   route_table_id = aws_route_table.route_table2.id
 }
