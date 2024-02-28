@@ -1,1 +1,2 @@
-.variable.tf
+# Ignore variable.tf file
+variable.tf
