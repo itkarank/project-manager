@@ -1,6 +1,7 @@
 # Security Group for EC2 Instance
 
-resource "aws_security_groups" "instance_sg" {
+
+  data "aws_security_groups" "instance_sg" {
   name        = "instance_sg"
   description = "Security group for the EC2 instance"
 
