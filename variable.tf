@@ -44,7 +44,7 @@ variable "ami" {
 
 variable "instance_type" {
   description = "EC2 instance type"
-  default     = "t2.small"
+  default     = "t2.large"
 }
 
 variable "key_name" {
