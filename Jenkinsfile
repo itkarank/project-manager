@@ -4,13 +4,6 @@ pipeline {
         choice(name: 'ACTION', choices: ['Apply', 'Destroy'], description: 'Select Terraform Action')
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/itkarank/backtd'
-            }
-        }
-
         stage('Terraform Init') {
             steps {
                     sh 'terraform init'
