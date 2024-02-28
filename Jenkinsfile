@@ -3,6 +3,7 @@ pipeline {
     parameters {
         choice(name: 'ACTION', choices: ['Apply', 'Destroy'], description: 'Select Terraform Action')
     }
+stages {
 
         stage('Terraform Init') {
             steps {
@@ -29,5 +30,5 @@ pipeline {
                 }
             }
         }
-    
+   }
 }
