@@ -14,12 +14,6 @@ resource "aws_instance" "my_instance" {
   }
 }
 
-resource "aws_instance" "my_instance" {
-  // Other configuration options for the AWS instance
-  
-  // Corrected argument name
-  security_groups = [aws_security_group.instance_sg.id]
-}
 
 
 
