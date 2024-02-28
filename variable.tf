@@ -39,7 +39,7 @@ variable "public_subnet2_az" {
 
 variable "ami" {
   description = "Amazon Machine Image (AMI) ID for EC2 instance"
-  default     = "ami-0ee4f2271a4df2d7d"
+  default     = "ami-0440d3b780d96b29d"
 }
 
 variable "instance_type" {
